@@ -1,0 +1,72 @@
+* {
+    background-color: antiquewhite;
+}
+.glowny, .gora {
+    width: 90%;
+}
+.glowny {
+    overflow: auto;
+}
+.gora {
+    background-color: rgba(255, 248, 220, 0.9); /* lekko przezroczyste tło */
+    padding: 20px;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 1000px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+.gora p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.gora form {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    align-items: end;
+}
+
+.gora label {
+    font-weight: 600;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.gora input[type="text"],
+.gora input[type="number"],
+.gora select {
+    width: 100%;
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 0.95rem;
+    background-color: white;
+    box-sizing: border-box;
+}
+
+.gora button {
+    grid-column: 1 / -1;
+    padding: 10px 20px;
+    background-color: #3c8dbc;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.gora button:hover {
+    background-color: #337ab7;
+}
+
+@media (max-width: 600px) {
+    .gora form {
+        grid-template-columns: 1fr;
+    }
+}
