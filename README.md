@@ -1,1 +1,2 @@
-to actually see the site you have to make your server in sql and create a database by importing one of the files I'm placing in the project
+My Lodging finding site made mostly using PHP and SQL
+to actually see the site you have to make a server, I recommend using xammp.
